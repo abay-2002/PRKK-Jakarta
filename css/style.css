@@ -30,75 +30,94 @@ header #logo-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(1fr,1fr));
 	width: 80%;
-	height: 400px;
 	overflow: hidden;
 	margin: 50px auto;
-	border-radius: 24px;
+	border-radius: 12px;
 	overflow: hidden;
+	/*background-color: red;*/
 }
 
 #container #container-welcome-img img {
 	width: 100%;
 	margin-top: -200px;
-	filter: grayscale(80%) blur(.8px);
+	filter: grayscale(90%) blur(.8px);
 }
 
-/*breakpoint container-welcome-img*/
+/*breakpoint-container-welcome-img*/
 @media only screen and (max-width: 1000px){
-		#container #container-welcome-img img {
+	 #container #container-welcome-img img {
 		width: 100%;
 		margin-top: 0 !important;
 	}	
 }
+/*penutup breakpoint-container-welcome-img*/
+/*penutup container-welcome-img*/
 
-#container h1 {
+#container #container-welcome-img h1{
 	position: absolute;
-	top: 35%;
+	top: 40%;
 	left: 14%;
 	color: rgba(255,255,255,1);
 	font-weight: bold;
-	font-size: 6em;
-	letter-spacing: 10px;
+	font-size: 5em;
+	letter-spacing: 20px;
 }
 
-
-@media only screen and (max-width: 576px){
-	#container h1 {
-		font-size: 4em;
-	}
-}
-
-@media only screen and (max-width: 576px){
-	#container h1 {
-		font-size: 4em;
-	}
-}
-
-
-@media only screen and (max-width: 420px){
-	#container h1 {
-		top: 25%;
+@media only screen and (max-width:576px){
+	#container #container-welcome-img h1{
+		position: absolute;
+		top: 40%;
 		left: 14%;
-		font-size: 4em;
-	}
-}
-
-
-@media only screen and (max-width: 340px){
-	#container h1 {
-		top: 25%;
-		left: 14%;
+		color: rgba(255,255,255,1);
+		font-weight: bold;
 		font-size: 3em;
+		letter-spacing: 20px;
 	}
 }
 
-/*penutup container-welcome-img*/
-#container #content-wrapper {
-	width: 80%;
-	height: 10px;
-	margin: 50px auto;
-	background-color: yellow;
+@media only screen and (max-width:420px){
+	#container #container-welcome-img h1{
+		position: absolute;
+		top: 35%;
+		left: 14%;
+		color: rgba(255,255,255,1);
+		font-weight: bold;
+		font-size: 2em;
+		letter-spacing: 20px;
+	}
+}
+
+@media only screen and (max-width:320px){
+	#container #container-welcome-img h1{
+		position: absolute;
+		top: 25%;
+		left: 14%;
+		color: rgba(255,255,255,1);
+		font-weight: bold;
+		font-size: 1.5em;
+		letter-spacing: 10px;
+	}
+}
+
+@media only screen and (max-width:300px){
+	#container #container-welcome-img h1{
+		position: absolute;
+		top: 25%;
+		left: 14%;
+		color: rgba(255,255,255,1);
+		font-weight: bold;
+		font-size: 1.5em;
+		letter-spacing: 10px;
+	}
 }
 
 
+/*container-content*/
+#container .container-content {
+	width: 80%;
+	margin:auto;
+	background-color: salmon;
+	height: 100px;
+}
+/*penutup container-content*/
 /*penutup container*/
