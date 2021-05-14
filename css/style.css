@@ -5,6 +5,7 @@
 	padding: 0;
 }
 
+
 body {
 	/*font-family: 'Nunito', sans-serif;*/
 	font-family: 'Nunito Sans', sans-serif;
@@ -13,21 +14,29 @@ body {
 /*header*/
 nav {
 	width: 100%;
-	padding: 10px;
 	background-color:#e30f00;
 	box-shadow: 0 3px 4px 0 rgba(0,0,0,.3);
 	position: fixed;
 	top: 0;
+	padding: 10px !important;
+	padding-bottom: 10px !important;
 	z-index: 999;
+	overflow: hidden;
+	height: auto;
+	box-sizing: border-box;
 }
 
 nav #logo-container {
 	width: 80%;
 	margin: auto;
+	display: block;;
 }
-/*penutup header*/
 
-/*container*/
+nav #logo-container img {
+	display: block;
+}
+
+
 #container {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -41,6 +50,7 @@ nav #logo-container {
 	width: 80%;
 	overflow: hidden;
 	margin: 50px auto;
+	margin-top: 100px;
 	border-radius: 12px;
 	overflow: hidden;
 	/*background-color: red;*/
