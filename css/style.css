@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:wght@600&display=swap');
 
-* {
+*, h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 	padding: 0;
 }
@@ -25,6 +25,12 @@ header #logo-container {
 /*penutup header*/
 
 /*container*/
+#container {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+
 /*container-welcome-img*/
 #container #container-welcome-img {
 	display: grid;
@@ -88,7 +94,6 @@ header #logo-container {
 	}
 }
 
-
 @media only screen and (max-width:420px){
 	#container #container-welcome-img h1{
 		position: absolute;
@@ -130,8 +135,60 @@ header #logo-container {
 #container .container-content {
 	width: 80%;
 	margin:auto;
-	background-color: salmon;
-	height: 100px;
+	margin-bottom: 50px;
+	background-color: rgba(255,255,255,1);
+	display: grid;
+	border-radius: 8px;
 }
+
+#container .container-content .menu {
+	/*background-color: red;*/
+	border-bottom: solid rgba(0,0,0,.3) 1px;
+	margin: 0px;
+	padding: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	display: grid;
+	grid-template-areas: 
+	'img desc tombol';
+	grid-gap: 14px;
+	box-sizing: border-box;
+}
+
+#container .container-content .menu:hover {
+	background-color: rgba(0,0,0,.03);
+	border-bottom: solid rgba(0,0,0,.5) 1px;
+}
+
+#container .container-content .menu .img-menu{
+	width: 120px;
+	height: 120px;
+	background-color: lightblue;
+	border-radius: 8px;
+}
+
+#container .container-content .menu .tombol {
+	padding: 8px !important;	
+	cursor: pointer;
+}
+
+.menu .wrapper1 {
+	/*background-color: yellow;*/
+	grid-area: img;
+}
+
+.menu .wrapper2 {
+	/*background-color: green;*/
+	grid-area: desc;
+	margin: auto;
+}
+
+.menu .wrapper3 {
+	grid-area: tombol;
+	margin: auto;
+}
+
+
+
 /*penutup container-content*/
 /*penutup container*/
