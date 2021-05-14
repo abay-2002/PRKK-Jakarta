@@ -9,6 +9,7 @@
 body {
 	/*font-family: 'Nunito', sans-serif;*/
 	font-family: 'Nunito Sans', sans-serif;
+	background-color: rgba(0,0,0,.02);
 }
 
 /*header*/
@@ -161,8 +162,11 @@ nav #logo-container img {
 	margin:auto;
 	margin-bottom: 50px;
 	background-color: rgba(255,255,255,1);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,.1);
+	padding: 10px;
+	padding-top: 0;
+	padding-bottom: 0;
 	display: grid;
-	border-radius: 8px;
 }
 
 #container .container-content .menu {
