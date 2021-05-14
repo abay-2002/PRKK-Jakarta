@@ -11,14 +11,17 @@ body {
 }
 
 /*header*/
-header {
+nav {
 	width: 100%;
 	padding: 10px;
 	background-color:#e30f00;
 	box-shadow: 0 3px 4px 0 rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	z-index: 999;
 }
 
-header #logo-container {
+nav #logo-container {
 	width: 80%;
 	margin: auto;
 }
