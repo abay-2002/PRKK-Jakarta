@@ -1,35 +1,57 @@
-// menu1 wrapper3
+// DOM SELECTION
+// nodelist
+// HTMLCollection
+// Element
 
-let tTes = document.getElementById('tes');
-let tTes2 = document.getElementById('tesTotal');
-let wrapperTest = document.getElementById('wrapperTest');
+// MANIPULATION
+// ELEMENT MANIPULATION
+// NODE MANIPULATION
 
-let hargaProduk1 = 0;
-let totalProduk1 = 0;
-// addProduk1
-let addProduk1 = document.getElementById('addProduk1');
-addProduk1.addEventListener('click',function(){
-	hargaProduk1 += 10000;
-	totalProduk1 += 1;
-	tTes.innerHTML = 'harga ='+hargaProduk1;
-	tTes2.innerHTML = 'total ='+totalProduk1;
-	wrapperTest.appendChild(tTes);
-	wrapperTest.appendChild(tTes2);
-});
+// EVENT
 
-// removepProduk1
-let removeProduk1 = document.getElementById('removeProduk1');
-removeProduk1.addEventListener('click',function(){
-	if((hargaProduk1 >= 10000)&&(totalProduk1 >= 1)){
-		hargaProduk1 -= 10000;
-		totalProduk1 -= 1;
-		tTes.innerHTML = 'harga ='+hargaProduk1;
-		tTes2.innerHTML = 'total ='+totalProduk1;
-	}else {
-		wrapperTest.removeChild(tTes);
-		wrapperTest.removeChild(tTes2);
-	}
-});
+
+// cart-statuswrapper
+let cartStatus = document.createElement('div');
+cartStatus.setAttribute('id','cart-status');
+
+let elhBody = document.getElementsByTagName('body')[0];
+elhBody.appendChild(cartStatus);
+
+
+
+
+// // menu1 wrapper3
+
+// let tTes = document.getElementById('tes');
+// let tTes2 = document.getElementById('tesTotal');
+// let wrapperTest = document.getElementById('wrapperTest');
+
+// let hargaProduk1 = 0;
+// let totalProduk1 = 0;
+// // addProduk1
+// let addProduk1 = document.getElementById('addProduk1');
+// addProduk1.addEventListener('click',function(){
+// 	hargaProduk1 += 10000;
+// 	totalProduk1 += 1;
+// 	tTes.innerHTML = 'harga ='+hargaProduk1;
+// 	tTes2.innerHTML = 'total ='+totalProduk1;
+// 	wrapperTest.appendChild(tTes);
+// 	wrapperTest.appendChild(tTes2);
+// });
+
+// // removepProduk1
+// let removeProduk1 = document.getElementById('removeProduk1');
+// removeProduk1.addEventListener('click',function(){
+// 	if((hargaProduk1 >= 10000)&&(totalProduk1 >= 1)){
+// 		hargaProduk1 -= 10000;
+// 		totalProduk1 -= 1;
+// 		tTes.innerHTML = 'harga ='+hargaProduk1;
+// 		tTes2.innerHTML = 'total ='+totalProduk1;
+// 	}else {
+// 		wrapperTest.removeChild(tTes);
+// 		wrapperTest.removeChild(tTes2);
+// 	}
+// });
 
 
 
