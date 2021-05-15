@@ -238,6 +238,7 @@ nav #logo-container img {
 	padding: 10px;
 	display: flex;
 	justify-content: center;
+	align-content: center;
 	cursor: pointer;
 }
 
@@ -251,6 +252,7 @@ nav #logo-container img {
 	padding: 10px;
 	display: flex;
 	justify-content: center;
+	align-content: center;
 }
 
 #cart-status #total p {
@@ -263,6 +265,7 @@ nav #logo-container img {
 	padding: 10px;
 	display: flex;
 	justify-content: center;
+	align-content: center;
 }
 
 #cart-status #barang p {
