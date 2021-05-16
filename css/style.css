@@ -5,11 +5,16 @@
 	padding: 0;
 }
 
+a {
+	color: rgba(0,0,0,.9);
+}
+
 
 body {
 	/*font-family: 'Nunito', sans-serif;*/
 	font-family: 'Nunito Sans', sans-serif;
 	background-color: rgba(255,255,255,1);
+	color: rgba(0,0,0,.9) !important;
 }
 
 /*header*/
@@ -30,7 +35,7 @@ nav {
 nav #logo-container {
 	width: 80%;
 	margin: auto;
-	display: block;;
+	display: block;
 }
 
 nav #logo-container img {
@@ -163,9 +168,6 @@ nav #logo-container img {
 	margin-bottom: 50px;/*
 	background-color: rgba(255,255,255,1);*/
 	box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);
-	padding: 10px;
-	padding-top: 0;
-	padding-bottom: 0;
 	display: grid;
 }
 
@@ -225,54 +227,49 @@ nav #logo-container img {
 	/*padding: 10px;*/
 	width: 100%;
 	height: auto;
-	background-color:#1ff061; /*iconic red*/	
+	background-color:rgba(255,255,255,1);
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-areas: 
-	'checkout total barang';
+	'total checkout';
+	padding: 2px;
+}
+
+#cart-status #total, #checkout{
+	grid-area: total;
+	background-color: #1ff061;
+	border-radius: 2px;
+	padding: 6px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+}
+
+#cart-status #total img{
+	width: 20px;
+	height: 20px;
+	margin-right: 4.1px;
+}
+
+#cart-status #checkout img {
+	width: 18px;
+	height: 18px;
+	margin-left: 4.1px;
+	margin-top: 2px;
+}
+
+#cart-status #checkout {
+	cursor: pointer;
+}
+
+#cart-status #total p, #checkout a {
+	font-weight: bolder;
 }
 
 #cart-status #checkout {
 	grid-area: checkout;
-	background-color: #1ff061;
-	padding: 10px;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	margin: auto;
-	cursor: pointer;
 }
 
-#cart-status #checkout p {
-	font-weight: bolder;
-}
-
-#cart-status #total {
-	grid-area: total;
-	background-color: #1ff061;
-	padding: 10px;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	margin: auto;
-}
-
-#cart-status #total p {
-	font-weight: bolder;
-}
-
-#cart-status #barang {
-	grid-area: barang;
-	background-color: #1ff061;
-	padding: 10px;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	margin: auto;
-}
-
-#cart-status #barang p {
-	font-weight: bolder;
-}
 
 /*penutup cart-status*/
