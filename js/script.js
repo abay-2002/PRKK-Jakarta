@@ -10,17 +10,19 @@
 // EVENT
 
 
-// 
 
 // div id='total';
 let elhDivTotal = document.createElement('div');
 elhDivTotal.setAttribute('id','total');
+
 // img div id='total';
 let elhImgDivTotal = document.createElement('img');
 elhImgDivTotal.setAttribute('src', 'assets/img/icon/cart.png');
+
 // p div id='total';
 let elhPDivTotal = document.createElement('p');
-elhPDivTotal.innerHTML = "Total belanja: Rp.";
+elhPDivTotal.innerHTML = "Total belanja: Rp.0"
+
 elhDivTotal.appendChild(elhImgDivTotal);
 elhDivTotal.appendChild(elhPDivTotal);
 
@@ -48,50 +50,74 @@ cartStatus.appendChild(elhDivCheckout);
 let elhBody = document.getElementsByTagName('body')[0];
 elhBody.appendChild(cartStatus);
 
-// // menu1 wrapper3
+// menu-1
+let totalHarga1 = 0;
+let jumlahProduk1 = 0;
+let elhTotalHarga = 0;
 
-// let tTes = document.getElementById('tes');
-// let tTes2 = document.getElementById('tesTotal');
-// let wrapperTest = document.getElementById('wrapperTest');
+let addProduk1 = document.getElementById('addProduk1');
+addProduk1.addEventListener('click',function(){
+	totalHarga1 += 10000;
+	jumlahProduk1 += 1;
+	elhTotalHarga += 10000;
+	elhPDivTotal.innerHTML = "Total belanja: Rp." + elhTotalHarga;
+});
 
-// let hargaProduk1 = 0;
-// let totalProduk1 = 0;
-// // addProduk1
-// let addProduk1 = document.getElementById('addProduk1');
-// addProduk1.addEventListener('click',function(){
-// 	hargaProduk1 += 10000;
-// 	totalProduk1 += 1;
-// 	tTes.innerHTML = 'harga ='+hargaProduk1;
-// 	tTes2.innerHTML = 'total ='+totalProduk1;
-// 	wrapperTest.appendChild(tTes);
-// 	wrapperTest.appendChild(tTes2);
-// });
+let removeProduk1 = document.getElementById('removeProduk1');
+removeProduk1.addEventListener('click',function(){
+	if(totalHarga1 >= 10000){
+	totalHarga1 -= 10000;
+	jumlahProduk1 -= 1;
+	elhTotalHarga -= 10000;
+	elhPDivTotal.innerHTML = "Total belanja: Rp." + elhTotalHarga;
+	};
+});
 
-// // removepProduk1
-// let removeProduk1 = document.getElementById('removeProduk1');
-// removeProduk1.addEventListener('click',function(){
-// 	if((hargaProduk1 >= 10000)&&(totalProduk1 >= 1)){
-// 		hargaProduk1 -= 10000;
-// 		totalProduk1 -= 1;
-// 		tTes.innerHTML = 'harga ='+hargaProduk1;
-// 		tTes2.innerHTML = 'total ='+totalProduk1;
-// 	}else {
-// 		wrapperTest.removeChild(tTes);
-// 		wrapperTest.removeChild(tTes2);
-// 	}
-// });
+// menu-2
+let totalHarga2 = 0;
+let jumlahProduk2 = 0;
 
+let addProduk2 = document.getElementById('addProduk2');
+addProduk2.addEventListener('click',function(){
+	totalHarga2 += 20000;
+	jumlahProduk2 += 2;
+	elhTotalHarga += 20000;
+	elhPDivTotal.innerHTML = "Total belanja: Rp." + elhTotalHarga;
+});
 
+let removeProduk2 = document.getElementById('removeProduk2');
+removeProduk2.addEventListener('click',function(){
+	if(totalHarga2 >= 20000){
+	totalHarga2 -= 20000;
+	jumlahProduk2 -= 2;
+	elhTotalHarga -= 20000;
+	elhPDivTotal.innerHTML = "Total belanja: Rp." + elhTotalHarga;
+	};
+});
 
-// idenya adalah apabila add sebuah produk diklik maka
-// tambah harga produk tersebut
-// tambah total produk tersebut
+// menu-3
+let totalHarga3 = 0;
+let jumlahProduk3 = 0;
 
-// apabila tombol bayar dklik tampilkan dialog box 
-// dialog box untuk mengisi form mau kemana produk tersbut dikirim
+let addProduk3 = document.getElementById('addProduk3');
+addProduk3.addEventListener('click',function(){
+	totalHarga3 += 30000;
+	jumlahProduk3 += 3;
+	elhTotalHarga += 30000;
+	elhPDivTotal.innerHTML = "Total belanja: Rp." + elhTotalHarga;
+});
 
-// apabila dialog box tersebut sudah diklik maka akan tersambung ke API WhatsApp
-
+let removeProduk3 = document.getElementById('removeProduk3');
+removeProduk3.addEventListener('click',function(){
+	if(totalHarga3 >= 30000){
+	totalHarga3 -= 30000;
+	jumlahProduk3 -= 3;
+	elhTotalHarga -= 30000;
+	elhPDivTotal.innerHTML = "Total belanja: Rp." + elhTotalHarga;
+	};
+});
+// idenya adalah
+// ketika tombol adalah ketika tombol add atau tombol remove diklik maka nilai/total harga dari sebuah menu tersebut bertambah atau berkurang
 
 
 // JS DOM
