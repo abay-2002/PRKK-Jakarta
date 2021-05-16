@@ -44,6 +44,7 @@ cartStatus.setAttribute('id','cart-status');
 cartStatus.appendChild(elhDivTotal);
 cartStatus.appendChild(elhDivCheckout);
 
+// elhBody
 let elhBody = document.getElementsByTagName('body')[0];
 elhBody.appendChild(cartStatus);
 
