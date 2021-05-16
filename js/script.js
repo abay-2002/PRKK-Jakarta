@@ -10,15 +10,42 @@
 // EVENT
 
 
+// 
+
+// div id='total';
+let elhDivTotal = document.createElement('div');
+elhDivTotal.setAttribute('id','total');
+// img div id='total';
+let elhImgDivTotal = document.createElement('img');
+elhImgDivTotal.setAttribute('src', 'assets/img/icon/cart.png');
+// p div id='total';
+let elhPDivTotal = document.createElement('p');
+elhPDivTotal.innerHTML = "Total belanja: Rp.";
+elhDivTotal.appendChild(elhImgDivTotal);
+elhDivTotal.appendChild(elhPDivTotal);
+
+// div id = 'checkout'
+let elhDivCheckout = document.createElement('div');
+elhDivCheckout.setAttribute('id', 'checkout');
+// a div id = 'checkout'
+let elhADivCheckout = document.createElement('a');
+elhADivCheckout.setAttribute('href','a');
+elhADivCheckout.innerHTML = 'Lanjut';
+// img div id = 'checkout'
+let elhImgDivCheckout = document.createElement('img');
+elhImgDivCheckout.setAttribute('src','assets/img/icon/arrow.png');
+elhDivCheckout.appendChild(elhADivCheckout);
+elhDivCheckout.appendChild(elhImgDivCheckout);
+
+
 // cart-statuswrapper
 let cartStatus = document.createElement('div');
 cartStatus.setAttribute('id','cart-status');
+cartStatus.appendChild(elhDivTotal);
+cartStatus.appendChild(elhDivCheckout);
 
 let elhBody = document.getElementsByTagName('body')[0];
 elhBody.appendChild(cartStatus);
-
-
-
 
 // // menu1 wrapper3
 

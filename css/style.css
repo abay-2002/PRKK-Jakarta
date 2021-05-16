@@ -1,3 +1,18 @@
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e30f00 !important; /*iconic red*/
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e30f00 !important; /*iconic red*/
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&display=swap');
 
 *, h1,h2,h3,h4,h5,h6 {
@@ -9,13 +24,14 @@ a {
 	color: rgba(0,0,0,.9);
 }
 
-
 body {
 	/*font-family: 'Nunito', sans-serif;*/
 	font-family: 'Nunito Sans', sans-serif;
 	background-color: rgba(255,255,255,1);
 	color: rgba(0,0,0,.9) !important;
 }
+
+
 
 /*header*/
 nav {
@@ -167,13 +183,13 @@ nav #logo-container img {
 	margin:auto;
 	margin-bottom: 50px;/*
 	background-color: rgba(255,255,255,1);*/
-	box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);
+	/*box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);*/
 	display: grid;
 }
 
 #container .container-content .menu {
-	/*background-color: red;*/
-	border-bottom: solid rgba(0,0,0,.3) 1px;
+/*	background-color: red;
+*/	border-bottom: solid rgba(0,0,0,.3) 1px;
 	margin: 0px;
 	padding: 10px;
 	padding-left: 0px;
